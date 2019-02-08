@@ -5,7 +5,9 @@ while True:
     if english_word == "q":
         break
     korean_meaning = input("한국어 뜻을 입력하세요 : ")
-    
+    if korean_meaning == "q":
+        break
+        
     out_file.write("%s : %s\n" % (english_word, korean_meaning))
 
 out_file.close()
